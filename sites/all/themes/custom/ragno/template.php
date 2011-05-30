@@ -36,8 +36,8 @@ function ragno_preprocess_user_login(&$vars) {
     $vars['form']['name']['#title'] = 'Username';
 
     // Wraps submit button.
-    $vars['form']['submit']['#prefix'] = '<div class="form-actions">';
-    $vars['form']['submit']['#suffix'] = '</div>';
+    //$vars['form']['submit']['#prefix'] = '<div class="form-actions">';
+    //$vars['form']['submit']['#suffix'] = '</div>';
 }
 
 function ragno_preprocess_block(&$vars) {
