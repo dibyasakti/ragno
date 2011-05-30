@@ -493,11 +493,10 @@ div#primary{
       }
     }
     #footer_nav div#block-menu-menu-contact{
-      margin-right: 0;
-      width: 110px;
+      margin-right: 14px;
+      width: 95px;
       ul{
-        margin-top: -1px;
-        padding: 0;
+        margin: -1px 0 0 18px;
       }
     }
   }
@@ -1283,7 +1282,7 @@ div#primary{
   }
 }
 
-.page-catalogs{
+.page-catalogs {
   #main-content{
     margin-top: 17px;   
     h1{
@@ -1320,7 +1319,7 @@ div#primary{
           width: 700px;
         }
         .views-field-title{
-          margin: 15px 0 0 20px;
+          margin: 0px 0 0 20px;
           a{
             font-size: 18px;
             text-decoration: none;
@@ -1329,7 +1328,7 @@ div#primary{
         }
         .views-field-body{
           float: none;
-          margin: 62px 0 0 150px;
+          margin: 31px 0 0 150px;
         }
       }      
     }        
@@ -1376,6 +1375,114 @@ div#primary{
     }
   }
 }
+
+
+
+
+
+.page-technical {
+  #main-content{
+    margin-top: 17px;   
+    h1{
+      background: #767932;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      height: 38px;
+      padding: 1px 0 0 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+      width: 930px;
+    }
+    #pager-top{
+      float: right;
+      position: relative;
+      top: -39px;
+      width: 400px;
+    }
+    .view-technical{
+      .views-row{
+        margin: 10px 0 20px 0;
+        border: #767932 solid 2px;
+        padding: 22px 19px;
+        width: 899px;
+        div{
+          float: left;
+        }
+        .views-field-field-technical-image-fid-1{
+          width: 130px;
+        }
+        .views-field-title a, .views-field-body{
+          color: #9eacad;
+          font-family: Arial, Helvetica, sans-serif;
+          width: 700px;
+        }
+        .views-field-title{
+          margin: 0px 0 0 20px;
+          a{
+            font-size: 18px;
+            text-decoration: none;
+            text-transform: uppercase;
+          }            
+        }
+        .views-field-body{
+          float: none;
+          margin: 31px 0 0 150px;
+        }
+      }      
+    }        
+  }
+  .pager{
+    position: relative;
+    float: right;
+    margin-right: 27px;
+    li{
+      float: left;
+      margin: 0 6px;
+      padding: 0;
+      a{
+        display: block;
+        height: 22px;
+        outline: none;
+        text-indent: -50000px;
+        width: 22px;
+      }
+    }
+    .pager-previous{
+      a{
+        background: url(../images/page_back.png) no-repeat;  
+      }        
+    }
+    .pager-current{
+      div{
+        float: left;
+        text-transform: uppercase;
+      }
+      div.center-info{
+        margin: 0 8px;
+      }
+      span{
+        border: 1px solid #9eacad;
+        background: #2a3435;
+        display: block;
+        width: 33px;  
+      }      
+    }
+    .pager-next{
+      a{
+        background: url(../images/page_next.png) no-repeat;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
 
 .section-communications{
   #sidebar-left{
@@ -1743,14 +1850,14 @@ div#primary{
       background: #767932;
       color: #fff;
       display: block;
-      font-size: 14px;
+     /* font-size: 14px;*/
       font-family: Arial, Helvetica, sans-serif;
-      height: 27px;
-      margin: 7px 0 0 12px;
+     /* height: 27px;
+      margin: 7px 0 0 12px;*/
       padding: 2px 0 0 14px;
       text-decoration: none;
       text-transform: uppercase;
-      width: 115px;
+      /*width: 115px;*/
     }
     .view-directory-all-locations{
       .view-filters{
@@ -1807,9 +1914,9 @@ div#primary{
       .view-content{  
         height: 600px;      
         .gmap-gmap{
-          height: 620px;
-          top: -29px;
-          width: 781px;
+          height: 600px !important;
+          top: 10px;
+          width: 750px !important;
         }
       }
       .attachment{  
@@ -2436,10 +2543,15 @@ div#primary{
             color: #FFF;
             display: block;
             font-size: 1.7em;
-            margin: 0;
-            padding: 10px;
             text-align: left;
-            text-transform: uppercase;
+			margin-left:0px;
+			background: none repeat scroll 0 0 #767932;
+			/*padding: 1px 0 0 10px ! important;*/
+			text-decoration: none;
+			text-transform: uppercase;
+			width: 930px;
+			
+			
           }
           .local-tasks{
             margin-left: 270px;
@@ -2461,9 +2573,9 @@ div#primary{
               font-weight: bold;
             }
             .pager{
-              position: absolute;
+              position: relative;
               right: 0;
-              top: 20px;
+             /* top: 20px;*/
               li{
                 margin: 0;
               }
@@ -2496,4 +2608,12 @@ div#primary{
   width: 150px !important;
   opacity: 100 !important;
   float: right;
+}
+
+#user-login-form-wrapper  #edit-submit {
+  height: 40px;
+  width: 85px;
+  background: url(/ragno/sites/all/themes/custom/ragno/images/login.jpg) no-repeat;
+  border: none;
+  font-size: 0;
 }
