@@ -76,6 +76,20 @@
 		
 	};
 	
-	$( function( ){ InitializePage( ); } );
+	$( function( ){ InitializePage( );
+	
+		$('.pager-link').each(function(index){
+			$(this).context.href = $(this).context.childNodes[3].childNodes[0].wholeText;
+			$(this).context.childNodes[3].childNodes[0].textContent = '';	
+		});
+		$('.pager-link').hover(function(){
+		//	alert('test');
+			$('.pager-link').click(function(){
+				window.location=$(this).attr('href'); 
+			});		
+		});
+		
+	
+	} );
 	
 } )( jQuery );
