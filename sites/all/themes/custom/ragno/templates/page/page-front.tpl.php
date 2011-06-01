@@ -214,7 +214,7 @@
         <?php if ($footer): ?>
 	          <div id="footer" class="section region grid_12">
 	          	<div id="footer_logo" class="grid_2 alpha">
-	          		<a href="http://www.marazzi.it" class="external"><img src="<?php print base_path( ) . path_to_theme() ?>/images/marazzi-group.png" alt="Marazzi Group" /></a>
+	          		<a href="http://www.ragno.it" class="external"><img src="<?php print base_path( ) . path_to_theme() ?>/images/marazzi-group.png" alt="Marazzi Group" /></a>
 	      			</div> <!-- /footer_logo -->      
 	      			<div id="footer_nav" class="alpha omega">
 	      				<?php print $footer; ?>
