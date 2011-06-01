@@ -2086,9 +2086,9 @@ div#primary{
 }
 
 .section-idea-center{
-  #main-content{
+ #columns #content-column .content-inner #main-content{
     h1{
-      background: #767932;
+     /* background: #767932;
       color: #fff;
       display: block;
       font-family: Arial, Helvetica, sans-serif;
@@ -2097,8 +2097,24 @@ div#primary{
       padding: 2px 0 0 10px;
       text-decoration: none;
       text-transform: uppercase;
-      width: 926px;         
+      width: 934px;      */
+
+	  background: #767932;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      height: 38px;
+      padding: 1px 0 0 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+      width: 930px;	  
     }
+	 #pager-top{
+      float: right;
+      position: relative;
+      top: -37px;
+      width: 400px;
+    }
+
 	.view-content{
 		width: 930px;
 	}
@@ -2166,7 +2182,7 @@ div#primary{
             .views-field-field-featured-image-fid{
               img{
                 height: 280px;
-                width: 457px;
+                width: 452px;
               }
             }
             .views-field-title{
@@ -2538,7 +2554,7 @@ div#primary{
   }
 }
 
-.section-technical{
+.section-technical {
 
   color:#9EACAD;
   #columns{
@@ -2608,7 +2624,8 @@ div#primary{
     position: relative;
     #content{    
       .pager{
-        position: absolute;
+       /* position: absolute;*/
+	    margin-right: 30px;
         right: 35px;
         top: 5px;
         li{
