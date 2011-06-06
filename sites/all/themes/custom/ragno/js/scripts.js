@@ -79,8 +79,11 @@
 	$( function( ){ InitializePage( );
 	
 		$('.pager-link').each(function(index){
-			$(this).context.href = $(this).context.childNodes[3].childNodes[0].wholeText;
-			$(this).context.childNodes[3].childNodes[0].textContent = '';	
+		//console.log($('.hidden',this).html());
+			//$(this).context.href =$('.hidden',this).html();
+			$(this).attr('href',$('.hidden',this).html());
+			//$(this).context.childNodes[3].childNodes[0].textContent = '';	
+			$('.hidden',this).html('');
 		});
 		$('.pager-link').hover(function(){
 		//	alert('test');
