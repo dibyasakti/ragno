@@ -281,7 +281,7 @@ div#primary{
         position: relative;
         width: 220px;
         div.views-field-title{
-          background: #6a6c00;
+          background: #767932;
           margin: 0;
           text-align: right;
           padding: 5px 10px;
@@ -793,11 +793,16 @@ div#primary{
         }
       }
     }
+  .view-empty {
+	color: #9EACAD;
+	margin-left: 25px;
+  }
     #content-fragment0-3 {
       .views-row-first{
         margin-top: 0;
       }
       .views-row{
+		color: #9EACAD;
         float: left;
         font-family: Arial,Helvetica,sans-serif;
         font-size: 10px;
@@ -811,7 +816,7 @@ div#primary{
         margin-top: 0!important;
       }
       .views-field-title {
-        color: #fff;
+        color: #9EACAD;
         margin: 0 0 0 13px;
         padding: 0 5px;
         width: 85px;
@@ -820,6 +825,7 @@ div#primary{
           text-align: right;
         }
       }
+	
       .views-field-field-icon-image-fid {
         width: 31px;
         img{
@@ -1046,7 +1052,7 @@ div#primary{
     }
     h1{
       background: #767932;
-      font-size: 2em;
+      font-size: 1.5em;
       margin: 0 0 10px;
     }
     h2{
@@ -1485,15 +1491,6 @@ div#primary{
   }
 }
 
-
-
-
-
-
-
-
-
-
 .section-communications{
   #sidebar-left{
     margin-left: -970px!important;
@@ -1512,6 +1509,9 @@ div#primary{
       font-family: Arial, Helvetica, sans-serif;
       text-decoration: none;
     }
+	a:hover{
+		color: #fff;
+	}
     #block-views-news_stories-block_4{
       padding: 10px 0;
       .view-news-stories{
@@ -2036,9 +2036,12 @@ div#primary{
       li{
         list-style: none;
         a{
-          color: #fff;
+          color: #9EACAD;
           text-decoration: none;
         }
+		a:hover{
+			color: #fff;
+		}
         a.active{
           background: #767932;
           display: block;
@@ -2087,7 +2090,7 @@ div#primary{
 .section-idea-center{
  #columns #content-column .content-inner #main-content{
     h1{
-     /* background: #767932;
+      background: #767932;
       color: #fff;
       display: block;
       font-family: Arial, Helvetica, sans-serif;
@@ -2096,24 +2099,17 @@ div#primary{
       padding: 2px 0 0 10px;
       text-decoration: none;
       text-transform: uppercase;
-      width: 934px;      */
+      width: 934px;      
 
-	  background: #767932;
+	/*  background: #767932;
       color: #fff;
       font-family: Arial, Helvetica, sans-serif;
       height: 38px;
       padding: 1px 0 0 10px;
       text-decoration: none;
       text-transform: uppercase;
-      width: 930px;	  
+      width: 930px;	  */
     }
-	 #pager-top{
-      float: right;
-      position: relative;
-      top: -37px;
-      width: 400px;
-    }
-
 	.view-content{
 		width: 930px;
 	}
@@ -2421,9 +2417,9 @@ div#primary{
       background: #767932;
       color: #fff;
       display: block;
-      font-size: 14px;
+      /*font-size: 14px;*/
       font-family: Arial, Helvetica, sans-serif;
-      height: 27px;
+      height: 38px;
       margin: 0;
       padding: 4px 0 0 14px;
       text-decoration: none;
@@ -2435,6 +2431,7 @@ div#primary{
     }
     .faq-content{
       .faq{
+		padding:10px;
         .faq-question-answer{
           .faq-question{
             a{
@@ -2473,6 +2470,9 @@ div#primary{
               text-decoration: none;
               text-transform: uppercase;
             }
+			a:hover{
+			 color: #fff;
+			}
             span{
               color: #9EACAD;
               display: block;
@@ -2619,19 +2619,38 @@ div#primary{
 }
 
 .section-idea-center{
+	
   #main-content{    
     position: relative;
     #content{    
       .pager{
-       /* position: absolute;*/
-	    margin-right: 30px;
-        right: 35px;
+        position: relative;
+	    margin-right: 15px;
+		right: 0px;
+        top: 5px;
+        li{
+          margin: 0;
+        }      
+      }
+	  img {
+		width:460px;
+		height:200px;
+	  }
+    }
+	
+  #pager-top{
+  
+	 .pager{
+        position: absolute;
+	    margin-right: 15px;
+        right: 0px;
         top: 5px;
         li{
           margin: 0;
         }      
       }
     }
+
   }
 }
 .section-categories{
@@ -2674,4 +2693,11 @@ div#primary{
 .node  .node-content a{
 	 color: #46887E;
 	 text-decoration:none;
+}
+
+.section-content {
+	a {
+		color:#46887E;
+		text-decoration:none;
+	}
 }
